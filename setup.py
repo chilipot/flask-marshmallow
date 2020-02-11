@@ -45,7 +45,7 @@ def read(fname):
 
 
 setup(
-    name="flask-marshmallow",
+    name="flask-toasted-marshmallow",
     version=find_version("src/flask_marshmallow/__init__.py"),
     description="Flask + marshmallow for beautiful APIs",
     long_description=read("README.rst"),
