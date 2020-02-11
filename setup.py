@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 EXTRAS_REQUIRE = {
     "sqlalchemy": [
         "flask-sqlalchemy",
-        'toasted-marshmallow-sqlalchemy@git+ssh://git@github.com/chilipot/toasted-marshmallow-sqlalchemy#egg=toasted-marshmallow-sqlalchemy; python_version >= "3.6"'
+        'toasted-marshmallow-sqlalchemy==0.21.0; python_version >= "3.6"'
     ],
     "docs": ["Sphinx==2.4.0", "sphinx-issues==1.2.0"],
     "lint": [
@@ -18,7 +18,8 @@ EXTRAS_REQUIRE = {
 EXTRAS_REQUIRE["tests"] = EXTRAS_REQUIRE["sqlalchemy"] + ["pytest", "mock"]
 EXTRAS_REQUIRE["dev"] = EXTRAS_REQUIRE["tests"] + EXTRAS_REQUIRE["lint"] + ["tox"]
 
-REQUIRES = ["Flask", "marshmallow>=2.0.0", "six>=1.9.0"]
+DEPENDENCY_LINKS = ['toasted-marshmallow-sqlalchemy@git+ssh://git@github.com/chilipot/toasted-marshmallow-sqlalchemy#egg=toasted-marshmallow-sqlalchemy']
+REQUIRES = ["Flask", "toasted-marshmallow>=2.0.0", "six>=1.9.0"]
 
 
 def find_version(fname):
