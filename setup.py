@@ -19,7 +19,7 @@ EXTRAS_REQUIRE["tests"] = EXTRAS_REQUIRE["sqlalchemy"] + ["pytest", "mock"]
 EXTRAS_REQUIRE["dev"] = EXTRAS_REQUIRE["tests"] + EXTRAS_REQUIRE["lint"] + ["tox"]
 
 DEPENDENCY_LINKS = ['toasted-marshmallow-sqlalchemy@git+ssh://git@github.com/chilipot/toasted-marshmallow-sqlalchemy#egg=toasted-marshmallow-sqlalchemy']
-REQUIRES = ["Flask", "toasted-marshmallow>=2.0.0", "six>=1.9.0"]
+REQUIRES = ["Flask", "toastedmarshmallow>=2.0.0", "six>=1.9.0"]
 
 
 def find_version(fname):
