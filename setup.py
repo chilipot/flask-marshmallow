@@ -53,6 +53,7 @@ setup(
     author="Steven Loria",
     author_email="sloria1@gmail.com",
     url="https://github.com/marshmallow-code/flask-marshmallow",
+    dependency_links=DEPENDENCY_LINKS,
     packages=find_packages("src"),
     package_dir={"": "src"},
     include_package_data=True,
