@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 EXTRAS_REQUIRE = {
     "sqlalchemy": [
         "flask-sqlalchemy",
-        'marshmallow-sqlalchemy@git+ssh://git@github.com/chilipot/toasted-marshmallow-sqlalchemy#egg=marshmallow-sqlalchemy; python_version >= "3.6"'
+        'toasted-marshmallow-sqlalchemy@git+ssh://git@github.com/chilipot/toasted-marshmallow-sqlalchemy#egg=toasted-marshmallow-sqlalchemy; python_version >= "3.6"'
     ],
     "docs": ["Sphinx==2.4.0", "sphinx-issues==1.2.0"],
     "lint": [
